@@ -1,0 +1,66 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Thu Mar 01 10:30:34 2018
+| Host         : 804-064 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file cpu_control_sets_placed.rpt
+| Design       : cpu
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    13 |
+| Minimum Number of register sites lost to control set restrictions |    18 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            5 |
+| No           | No                    | Yes                    |               1 |            1 |
+| No           | Yes                   | No                     |              64 |           16 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             128 |           51 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------+-------------------+----------------------------------+------------------+----------------+
+|   Clock Signal  |   Enable Signal   |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++-----------------+-------------------+----------------------------------+------------------+----------------+
+|  clk_N_BUFG     |                   | rst_IBUF                         |                1 |              1 |
+|  clk_IBUF_BUFG  |                   |                                  |                2 |              2 |
+|  show_w/d5w/CLK |                   |                                  |                3 |              3 |
+|  clk_N_BUFG     | _PC/en0           | rst_IBUF                         |                4 |             16 |
+|  clk_N_BUFG     | _PC/en01_out      | rst_IBUF                         |                4 |             16 |
+|  clk_N_BUFG     | _PC/out_reg[15]_0 | rst_IBUF                         |                4 |             16 |
+|  clk_IBUF_BUFG  |                   | d1/counter[0]_i_1_n_0            |                8 |             32 |
+|  clk_IBUF_BUFG  |                   | show_w/d5w/counter[0]_i_1__0_n_0 |                8 |             32 |
+|  clk_N_BUFG     | _PC/E[0]          | rst_IBUF                         |               18 |             32 |
+|  clk_N_BUFG     | regw_1/halt       | rst_IBUF                         |               21 |             48 |
+|  clk_N_BUFG     | _PC/WE            |                                  |               12 |             96 |
+|  clk_N_BUFG     | _PC/out_reg[19]_9 |                                  |               32 |            128 |
+|  clk_N_BUFG     | _PC/out_reg[31]_8 |                                  |               32 |            128 |
++-----------------+-------------------+----------------------------------+------------------+----------------+
+
+

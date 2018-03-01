@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/mux.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/divider.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/display.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/Register.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/Extender.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/ram.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/RFdatain.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/registers.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/PC.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/NPC.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/mem.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/inst_decoder.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/inst_count.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/extend.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/control.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/alu.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/show_choice.v"
+verilog xil_defaultlib  "../../../CPU.srcs/sources_1/new/cpu0228_09h06.v"
+verilog xil_defaultlib  "../../cpu_tb_需补CPU模块参数.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

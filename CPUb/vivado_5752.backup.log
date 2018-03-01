@@ -1,0 +1,1664 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Feb 28 10:16:13 2018
+# Process ID: 8072
+# Log file: D:/CPU/vivado.log
+# Journal file: D:/CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CPU/CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 725.770 ; gain = 144.602
+launch_runs impl_1
+[Wed Feb 28 10:16:50 2018] Launched impl_1...
+Run output will be captured here: D:/CPU/CPU.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Wed Feb 28 10:18:02 2018] Launched impl_1...
+Run output will be captured here: D:/CPU/CPU.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Feb 28 10:20:34 2018] Launched synth_1...
+Run output will be captured here: D:/CPU/CPU.runs/synth_1/runme.log
+[Wed Feb 28 10:20:34 2018] Launched impl_1...
+Run output will be captured here: D:/CPU/CPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292746182A
+set_property PROGRAM.FILE {D:/CPU/CPU.runs/impl_1/cpu.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/CPU/CPU.runs/impl_1/cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/CPU/CPU.runs/impl_1/cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Feb 28 10:34:45 2018] Launched synth_1...
+Run output will be captured here: D:/CPU/CPU.runs/synth_1/runme.log
+[Wed Feb 28 10:34:45 2018] Launched impl_1...
+Run output will be captured here: D:/CPU/CPU.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Feb 28 10:35:05 2018] Launched synth_1...
+Run output will be captured here: D:/CPU/CPU.runs/synth_1/runme.log
+[Wed Feb 28 10:35:05 2018] Launched impl_1...
+Run output will be captured here: D:/CPU/CPU.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 842 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Parsing XDC File [D:/CPU/.Xil/Vivado-8072-804-064/dcp/cpu.xdc]
+Finished Parsing XDC File [D:/CPU/.Xil/Vivado-8072-804-064/dcp/cpu.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.310 . Memory (MB): peak = 1053.105 ; gain = 6.523
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1053.879 ; gain = 205.043
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/CPU/CPU.runs/impl_1/cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Feb 28 10:47:35 2018] Launched synth_1...
+Run output will be captured here: D:/CPU/CPU.runs/synth_1/runme.log
+[Wed Feb 28 10:47:35 2018] Launched impl_1...
+Run output will be captured here: D:/CPU/CPU.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Wed Feb 28 10:51:08 2018] Launched impl_1...
+Run output will be captured here: D:/CPU/CPU.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/CPU/CPU.runs/impl_1/cpu.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: cpu
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:02:00 ; elapsed = 00:41:12 . Memory (MB): peak = 1053.879 ; gain = 881.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cpu' [D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v:1]
+INFO: [Synth 8-638] synthesizing module 'PC' [D:/CPU/CPU.srcs/sources_1/new/PC.v:1]
+INFO: [Synth 8-256] done synthesizing module 'PC' (1#1) [D:/CPU/CPU.srcs/sources_1/new/PC.v:1]
+INFO: [Synth 8-638] synthesizing module 'plus' [D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v:59]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'plus' (2#1) [D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v:59]
+INFO: [Synth 8-638] synthesizing module 'mem' [D:/CPU/CPU.srcs/sources_1/new/mem.v:2]
+INFO: [Synth 8-3876] $readmem data file 'D:\CPU\ccmb.txt' is read successfully [D:/CPU/CPU.srcs/sources_1/new/mem.v:9]
+INFO: [Synth 8-256] done synthesizing module 'mem' (3#1) [D:/CPU/CPU.srcs/sources_1/new/mem.v:2]
+INFO: [Synth 8-638] synthesizing module 'inst_decoder' [D:/CPU/CPU.srcs/sources_1/new/inst_decoder.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux2' [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (4#1) [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+INFO: [Synth 8-256] done synthesizing module 'inst_decoder' (5#1) [D:/CPU/CPU.srcs/sources_1/new/inst_decoder.v:23]
+INFO: [Synth 8-638] synthesizing module 'NPC' [D:/CPU/CPU.srcs/sources_1/new/NPC.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized0' [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized0' (5#1) [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized1' [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized1' (5#1) [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized2' [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized2' (5#1) [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+INFO: [Synth 8-256] done synthesizing module 'NPC' (6#1) [D:/CPU/CPU.srcs/sources_1/new/NPC.v:23]
+INFO: [Synth 8-638] synthesizing module 'extend' [D:/CPU/CPU.srcs/sources_1/new/extend.v:1]
+INFO: [Synth 8-638] synthesizing module 'Extender_n' [D:/CPU/CPU.srcs/sources_1/new/Extender.v:1]
+	Parameter a bound to: 16 - type: integer 
+	Parameter b bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Extender_n' (7#1) [D:/CPU/CPU.srcs/sources_1/new/Extender.v:1]
+INFO: [Synth 8-638] synthesizing module 'Extender_y' [D:/CPU/CPU.srcs/sources_1/new/Extender.v:9]
+	Parameter a bound to: 16 - type: integer 
+	Parameter b bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Extender_y' (8#1) [D:/CPU/CPU.srcs/sources_1/new/Extender.v:9]
+INFO: [Synth 8-638] synthesizing module 'Extender_n__parameterized0' [D:/CPU/CPU.srcs/sources_1/new/Extender.v:1]
+	Parameter a bound to: 5 - type: integer 
+	Parameter b bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Extender_n__parameterized0' (8#1) [D:/CPU/CPU.srcs/sources_1/new/Extender.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized3' [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized3' (8#1) [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized4' [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized4' (8#1) [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+INFO: [Synth 8-256] done synthesizing module 'extend' (9#1) [D:/CPU/CPU.srcs/sources_1/new/extend.v:1]
+INFO: [Synth 8-638] synthesizing module 'control' [D:/CPU/CPU.srcs/sources_1/new/control.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized5' [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+	Parameter width bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized5' (9#1) [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+WARNING: [Synth 8-387] label required on module instance [D:/CPU/CPU.srcs/sources_1/new/control.v:13]
+INFO: [Synth 8-638] synthesizing module 'equal_6' [D:/CPU/CPU.srcs/sources_1/new/control.v:77]
+INFO: [Synth 8-256] done synthesizing module 'equal_6' (10#1) [D:/CPU/CPU.srcs/sources_1/new/control.v:77]
+INFO: [Synth 8-638] synthesizing module 'op_we' [D:/CPU/CPU.srcs/sources_1/new/control.v:21]
+INFO: [Synth 8-256] done synthesizing module 'op_we' (11#1) [D:/CPU/CPU.srcs/sources_1/new/control.v:21]
+INFO: [Synth 8-638] synthesizing module 'ctrl_sgn' [D:/CPU/CPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-256] done synthesizing module 'ctrl_sgn' (12#1) [D:/CPU/CPU.srcs/sources_1/new/control.v:34]
+INFO: [Synth 8-638] synthesizing module 'ext_sgn' [D:/CPU/CPU.srcs/sources_1/new/control.v:54]
+INFO: [Synth 8-256] done synthesizing module 'ext_sgn' (13#1) [D:/CPU/CPU.srcs/sources_1/new/control.v:54]
+INFO: [Synth 8-638] synthesizing module 'branch' [D:/CPU/CPU.srcs/sources_1/new/control.v:64]
+INFO: [Synth 8-256] done synthesizing module 'branch' (14#1) [D:/CPU/CPU.srcs/sources_1/new/control.v:64]
+INFO: [Synth 8-256] done synthesizing module 'control' (15#1) [D:/CPU/CPU.srcs/sources_1/new/control.v:1]
+INFO: [Synth 8-638] synthesizing module 'RFdatain' [D:/CPU/CPU.srcs/sources_1/new/RFdatain.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized6' [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized6' (15#1) [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized7' [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized7' (15#1) [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+INFO: [Synth 8-256] done synthesizing module 'RFdatain' (16#1) [D:/CPU/CPU.srcs/sources_1/new/RFdatain.v:1]
+INFO: [Synth 8-638] synthesizing module 'Reg_1' [D:/CPU/CPU.srcs/sources_1/new/Register.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Reg_1' (17#1) [D:/CPU/CPU.srcs/sources_1/new/Register.v:1]
+INFO: [Synth 8-638] synthesizing module 'memory' [D:/CPU/CPU.srcs/sources_1/new/ram.v:2]
+INFO: [Synth 8-256] done synthesizing module 'memory' (18#1) [D:/CPU/CPU.srcs/sources_1/new/ram.v:2]
+INFO: [Synth 8-638] synthesizing module 'show_choice' [D:/CPU/CPU.srcs/sources_1/new/show_choice.v:22]
+INFO: [Synth 8-638] synthesizing module 'divider' [D:/CPU/CPU.srcs/sources_1/new/divider.v:22]
+	Parameter N bound to: 50000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divider' (19#1) [D:/CPU/CPU.srcs/sources_1/new/divider.v:22]
+INFO: [Synth 8-638] synthesizing module 'display' [D:/CPU/CPU.srcs/sources_1/new/display.v:23]
+INFO: [Synth 8-638] synthesizing module 'changeto8421' [D:/CPU/CPU.srcs/sources_1/new/display.v:37]
+INFO: [Synth 8-256] done synthesizing module 'changeto8421' (20#1) [D:/CPU/CPU.srcs/sources_1/new/display.v:37]
+INFO: [Synth 8-638] synthesizing module 'counter' [D:/CPU/CPU.srcs/sources_1/new/display.v:80]
+INFO: [Synth 8-256] done synthesizing module 'counter' (21#1) [D:/CPU/CPU.srcs/sources_1/new/display.v:80]
+INFO: [Synth 8-638] synthesizing module 'mul_sel' [D:/CPU/CPU.srcs/sources_1/new/display.v:88]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mul_sel' (22#1) [D:/CPU/CPU.srcs/sources_1/new/display.v:88]
+INFO: [Synth 8-638] synthesizing module 'pattern' [D:/CPU/CPU.srcs/sources_1/new/display.v:52]
+WARNING: [Synth 8-567] referenced signal 'en' should be on the sensitivity list [D:/CPU/CPU.srcs/sources_1/new/display.v:56]
+INFO: [Synth 8-256] done synthesizing module 'pattern' (23#1) [D:/CPU/CPU.srcs/sources_1/new/display.v:52]
+INFO: [Synth 8-638] synthesizing module 'decoder3_8' [D:/CPU/CPU.srcs/sources_1/new/display.v:108]
+INFO: [Synth 8-256] done synthesizing module 'decoder3_8' (24#1) [D:/CPU/CPU.srcs/sources_1/new/display.v:108]
+INFO: [Synth 8-256] done synthesizing module 'display' (25#1) [D:/CPU/CPU.srcs/sources_1/new/display.v:23]
+INFO: [Synth 8-256] done synthesizing module 'show_choice' (26#1) [D:/CPU/CPU.srcs/sources_1/new/show_choice.v:22]
+INFO: [Synth 8-638] synthesizing module 'inst_count' [D:/CPU/CPU.srcs/sources_1/new/inst_count.v:1]
+INFO: [Synth 8-638] synthesizing module 'Reg_16' [D:/CPU/CPU.srcs/sources_1/new/Register.v:17]
+INFO: [Synth 8-256] done synthesizing module 'Reg_16' (27#1) [D:/CPU/CPU.srcs/sources_1/new/Register.v:17]
+INFO: [Synth 8-256] done synthesizing module 'inst_count' (28#1) [D:/CPU/CPU.srcs/sources_1/new/inst_count.v:1]
+INFO: [Synth 8-638] synthesizing module 'registers' [D:/CPU/CPU.srcs/sources_1/new/registers.v:1]
+INFO: [Synth 8-256] done synthesizing module 'registers' (29#1) [D:/CPU/CPU.srcs/sources_1/new/registers.v:1]
+INFO: [Synth 8-638] synthesizing module 'alu' [D:/CPU/CPU.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-256] done synthesizing module 'alu' (30#1) [D:/CPU/CPU.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized8' [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized8' (30#1) [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized9' [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized9' (30#1) [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized10' [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized10' (30#1) [D:/CPU/CPU.srcs/sources_1/new/mux.v:1]
+INFO: [Synth 8-638] synthesizing module 'Reg_32' [D:/CPU/CPU.srcs/sources_1/new/Register.v:33]
+INFO: [Synth 8-256] done synthesizing module 'Reg_32' (31#1) [D:/CPU/CPU.srcs/sources_1/new/Register.v:33]
+INFO: [Synth 8-638] synthesizing module 'Extender_n__parameterized1' [D:/CPU/CPU.srcs/sources_1/new/Extender.v:1]
+	Parameter a bound to: 8 - type: integer 
+	Parameter b bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Extender_n__parameterized1' (31#1) [D:/CPU/CPU.srcs/sources_1/new/Extender.v:1]
+INFO: [Synth 8-256] done synthesizing module 'cpu' (32#1) [D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:01 ; elapsed = 00:41:13 . Memory (MB): peak = 1053.879 ; gain = 881.938
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:01 ; elapsed = 00:41:13 . Memory (MB): peak = 1053.879 ; gain = 881.938
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/CPU/CPU.srcs/constrs_1/new/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/CPU/CPU.srcs/constrs_1/new/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-141] Inserted 16 OBUFs to IO ports without IO buffers.
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:02:09 ; elapsed = 00:41:18 . Memory (MB): peak = 1193.531 ; gain = 1021.590
+94 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1193.531 ; gain = 139.652
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse D:/CPU/CPU.sim/cpu_tb_需补CPU模块参数.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'register_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+"xvlog -m64 --relax -prj register_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module changeto8421
+INFO: [VRFC 10-311] analyzing module pattern
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module mul_sel
+INFO: [VRFC 10-311] analyzing module decoder3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_1
+INFO: [VRFC 10-311] analyzing module Reg_16
+INFO: [VRFC 10-311] analyzing module Reg_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/Extender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extender_n
+WARNING: [VRFC 10-756] identifier b is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:2]
+WARNING: [VRFC 10-756] identifier a is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:3]
+INFO: [VRFC 10-311] analyzing module Extender_y
+WARNING: [VRFC 10-756] identifier b is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:10]
+WARNING: [VRFC 10-756] identifier a is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:11]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/RFdatain.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFdatain
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/inst_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-311] analyzing module op_we
+INFO: [VRFC 10-311] analyzing module ctrl_sgn
+INFO: [VRFC 10-311] analyzing module ext_sgn
+INFO: [VRFC 10-311] analyzing module branch
+INFO: [VRFC 10-311] analyzing module equal_6
+INFO: [VRFC 10-311] analyzing module equal_12
+INFO: [VRFC 10-311] analyzing module equal_13
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/show_choice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show_choice
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-311] analyzing module plus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/cpu_tb_需补CPU模块参数.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto af8487a79c614b3ab9500e33fd64b3a7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot register_tb_behav xil_defaultlib.register_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-1047] module instantiation should have an instance name [D:/CPU/CPU.srcs/sources_1/new/control.v:13]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-99] Step results log file:'D:/CPU/CPU.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/CPU/CPU.sim/sim_1/behav/elaborate.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'register_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+"xvlog -m64 --relax -prj register_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module changeto8421
+INFO: [VRFC 10-311] analyzing module pattern
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module mul_sel
+INFO: [VRFC 10-311] analyzing module decoder3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_1
+INFO: [VRFC 10-311] analyzing module Reg_16
+INFO: [VRFC 10-311] analyzing module Reg_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/Extender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extender_n
+WARNING: [VRFC 10-756] identifier b is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:2]
+WARNING: [VRFC 10-756] identifier a is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:3]
+INFO: [VRFC 10-311] analyzing module Extender_y
+WARNING: [VRFC 10-756] identifier b is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:10]
+WARNING: [VRFC 10-756] identifier a is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:11]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/RFdatain.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFdatain
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/inst_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-311] analyzing module op_we
+INFO: [VRFC 10-311] analyzing module ctrl_sgn
+INFO: [VRFC 10-311] analyzing module ext_sgn
+INFO: [VRFC 10-311] analyzing module branch
+INFO: [VRFC 10-311] analyzing module equal_6
+INFO: [VRFC 10-311] analyzing module equal_12
+INFO: [VRFC 10-311] analyzing module equal_13
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/show_choice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show_choice
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-311] analyzing module plus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/cpu_tb_需补CPU模块参数.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto af8487a79c614b3ab9500e33fd64b3a7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot register_tb_behav xil_defaultlib.register_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port SEG [D:/CPU/CPU.sim/cpu_tb_需补CPU模块参数.v:6]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 6 for port b [D:/CPU/CPU.srcs/sources_1/new/control.v:13]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port in [D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v:43]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" Line 1. Module cpu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/PC.v" Line 1. Module PC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" Line 59. Module plus doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/extend.v" Line 1. Module extend doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=5,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 1. Module control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 77. Module equal_6 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 21. Module op_we doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 34. Module ctrl_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 54. Module ext_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 64. Module branch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/RFdatain.v" Line 1. Module RFdatain doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 1. Module Reg_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" Line 1. Module inst_count doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/registers.v" Line 1. Module registers doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 33. Module Reg_32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=8,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" Line 1. Module cpu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/PC.v" Line 1. Module PC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" Line 59. Module plus doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/extend.v" Line 1. Module extend doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=5,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 1. Module control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 77. Module equal_6 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 21. Module op_we doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 34. Module ctrl_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 54. Module ext_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 64. Module branch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/RFdatain.v" Line 1. Module RFdatain doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 1. Module Reg_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" Line 1. Module inst_count doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/registers.v" Line 1. Module registers doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 33. Module Reg_32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=8,b=32) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.plus
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mux2(width=5)
+Compiling module xil_defaultlib.inst_decoder
+Compiling module xil_defaultlib.mux2(width=32)
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.Extender_n(a=16,b=32)
+Compiling module xil_defaultlib.Extender_y(a=16,b=32)
+Compiling module xil_defaultlib.Extender_n(a=5,b=32)
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.mux2(width=6)
+Compiling module xil_defaultlib.equal_6
+Compiling module xil_defaultlib.op_we
+Compiling module xil_defaultlib.ctrl_sgn
+Compiling module xil_defaultlib.ext_sgn
+Compiling module xil_defaultlib.branch
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.RFdatain
+Compiling module xil_defaultlib.Reg_1
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.changeto8421
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.mul_sel
+Compiling module xil_defaultlib.pattern
+Compiling module xil_defaultlib.decoder3_8
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.show_choice
+Compiling module xil_defaultlib.Reg_16
+Compiling module xil_defaultlib.inst_count
+Compiling module xil_defaultlib.registers
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.Reg_32
+Compiling module xil_defaultlib.Extender_n(a=8,b=32)
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.register_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot register_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/CPU/CPU.sim/sim_1/behav/xsim.dir/register_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/CPU/CPU.sim/sim_1/behav/xsim.dir/register_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Feb 28 11:27:14 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 28 11:27:14 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1202.813 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "register_tb_behav -key {Behavioral:sim_1:Functional:register_tb} -tclbatch {register_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source register_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'register_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 1218.461 ; gain = 15.648
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'register_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+"xvlog -m64 --relax -prj register_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module changeto8421
+INFO: [VRFC 10-311] analyzing module pattern
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module mul_sel
+INFO: [VRFC 10-311] analyzing module decoder3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_1
+INFO: [VRFC 10-311] analyzing module Reg_16
+INFO: [VRFC 10-311] analyzing module Reg_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/Extender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extender_n
+WARNING: [VRFC 10-756] identifier b is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:2]
+WARNING: [VRFC 10-756] identifier a is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:3]
+INFO: [VRFC 10-311] analyzing module Extender_y
+WARNING: [VRFC 10-756] identifier b is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:10]
+WARNING: [VRFC 10-756] identifier a is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:11]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/RFdatain.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFdatain
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/inst_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-311] analyzing module op_we
+INFO: [VRFC 10-311] analyzing module ctrl_sgn
+INFO: [VRFC 10-311] analyzing module ext_sgn
+INFO: [VRFC 10-311] analyzing module branch
+INFO: [VRFC 10-311] analyzing module equal_6
+INFO: [VRFC 10-311] analyzing module equal_12
+INFO: [VRFC 10-311] analyzing module equal_13
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/show_choice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show_choice
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-311] analyzing module plus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/cpu_tb_需补CPU模块参数.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto af8487a79c614b3ab9500e33fd64b3a7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot register_tb_behav xil_defaultlib.register_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port SEG [D:/CPU/CPU.sim/cpu_tb_需补CPU模块参数.v:6]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 6 for port b [D:/CPU/CPU.srcs/sources_1/new/control.v:13]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port in [D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v:43]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" Line 1. Module cpu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/PC.v" Line 1. Module PC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" Line 59. Module plus doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/extend.v" Line 1. Module extend doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=5,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 1. Module control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 77. Module equal_6 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 21. Module op_we doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 34. Module ctrl_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 54. Module ext_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 64. Module branch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/RFdatain.v" Line 1. Module RFdatain doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 1. Module Reg_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" Line 1. Module inst_count doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/registers.v" Line 1. Module registers doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 33. Module Reg_32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=8,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" Line 1. Module cpu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/PC.v" Line 1. Module PC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" Line 59. Module plus doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/extend.v" Line 1. Module extend doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=5,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 1. Module control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 77. Module equal_6 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 21. Module op_we doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 34. Module ctrl_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 54. Module ext_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 64. Module branch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/RFdatain.v" Line 1. Module RFdatain doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 1. Module Reg_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" Line 1. Module inst_count doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/registers.v" Line 1. Module registers doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 33. Module Reg_32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=8,b=32) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.plus
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mux2(width=5)
+Compiling module xil_defaultlib.inst_decoder
+Compiling module xil_defaultlib.mux2(width=32)
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.Extender_n(a=16,b=32)
+Compiling module xil_defaultlib.Extender_y(a=16,b=32)
+Compiling module xil_defaultlib.Extender_n(a=5,b=32)
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.mux2(width=6)
+Compiling module xil_defaultlib.equal_6
+Compiling module xil_defaultlib.op_we
+Compiling module xil_defaultlib.ctrl_sgn
+Compiling module xil_defaultlib.ext_sgn
+Compiling module xil_defaultlib.branch
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.RFdatain
+Compiling module xil_defaultlib.Reg_1
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.changeto8421
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.mul_sel
+Compiling module xil_defaultlib.pattern
+Compiling module xil_defaultlib.decoder3_8
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.show_choice
+Compiling module xil_defaultlib.Reg_16
+Compiling module xil_defaultlib.inst_count
+Compiling module xil_defaultlib.registers
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.Reg_32
+Compiling module xil_defaultlib.Extender_n(a=8,b=32)
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.register_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot register_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/CPU/CPU.sim/sim_1/behav/xsim.dir/register_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/CPU/CPU.sim/sim_1/behav/xsim.dir/register_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Feb 28 11:28:34 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 28 11:28:34 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1230.027 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "register_tb_behav -key {Behavioral:sim_1:Functional:register_tb} -tclbatch {register_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source register_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'register_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1230.027 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'register_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+"xvlog -m64 --relax -prj register_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module changeto8421
+INFO: [VRFC 10-311] analyzing module pattern
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module mul_sel
+INFO: [VRFC 10-311] analyzing module decoder3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_1
+INFO: [VRFC 10-311] analyzing module Reg_16
+INFO: [VRFC 10-311] analyzing module Reg_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/Extender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extender_n
+WARNING: [VRFC 10-756] identifier b is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:2]
+WARNING: [VRFC 10-756] identifier a is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:3]
+INFO: [VRFC 10-311] analyzing module Extender_y
+WARNING: [VRFC 10-756] identifier b is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:10]
+WARNING: [VRFC 10-756] identifier a is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:11]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/RFdatain.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFdatain
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/inst_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-311] analyzing module op_we
+INFO: [VRFC 10-311] analyzing module ctrl_sgn
+INFO: [VRFC 10-311] analyzing module ext_sgn
+INFO: [VRFC 10-311] analyzing module branch
+INFO: [VRFC 10-311] analyzing module equal_6
+INFO: [VRFC 10-311] analyzing module equal_12
+INFO: [VRFC 10-311] analyzing module equal_13
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/show_choice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show_choice
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-311] analyzing module plus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/cpu_tb_需补CPU模块参数.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto af8487a79c614b3ab9500e33fd64b3a7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot register_tb_behav xil_defaultlib.register_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port SEG [D:/CPU/CPU.sim/cpu_tb_需补CPU模块参数.v:6]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 6 for port b [D:/CPU/CPU.srcs/sources_1/new/control.v:13]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port in [D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v:43]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" Line 1. Module cpu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/PC.v" Line 1. Module PC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" Line 59. Module plus doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/extend.v" Line 1. Module extend doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=5,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 1. Module control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 77. Module equal_6 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 21. Module op_we doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 34. Module ctrl_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 54. Module ext_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 64. Module branch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/RFdatain.v" Line 1. Module RFdatain doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 1. Module Reg_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" Line 1. Module inst_count doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/registers.v" Line 1. Module registers doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 33. Module Reg_32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=8,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" Line 1. Module cpu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/PC.v" Line 1. Module PC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" Line 59. Module plus doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/extend.v" Line 1. Module extend doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=5,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 1. Module control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 77. Module equal_6 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 21. Module op_we doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 34. Module ctrl_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 54. Module ext_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 64. Module branch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/RFdatain.v" Line 1. Module RFdatain doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 1. Module Reg_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" Line 1. Module inst_count doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/registers.v" Line 1. Module registers doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 33. Module Reg_32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=8,b=32) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.plus
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mux2(width=5)
+Compiling module xil_defaultlib.inst_decoder
+Compiling module xil_defaultlib.mux2(width=32)
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.Extender_n(a=16,b=32)
+Compiling module xil_defaultlib.Extender_y(a=16,b=32)
+Compiling module xil_defaultlib.Extender_n(a=5,b=32)
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.mux2(width=6)
+Compiling module xil_defaultlib.equal_6
+Compiling module xil_defaultlib.op_we
+Compiling module xil_defaultlib.ctrl_sgn
+Compiling module xil_defaultlib.ext_sgn
+Compiling module xil_defaultlib.branch
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.RFdatain
+Compiling module xil_defaultlib.Reg_1
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.changeto8421
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.mul_sel
+Compiling module xil_defaultlib.pattern
+Compiling module xil_defaultlib.decoder3_8
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.show_choice
+Compiling module xil_defaultlib.Reg_16
+Compiling module xil_defaultlib.inst_count
+Compiling module xil_defaultlib.registers
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.Reg_32
+Compiling module xil_defaultlib.Extender_n(a=8,b=32)
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.register_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot register_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/CPU/CPU.sim/sim_1/behav/xsim.dir/register_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/CPU/CPU.sim/sim_1/behav/xsim.dir/register_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Feb 28 11:29:27 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 28 11:29:27 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1257.035 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "register_tb_behav -key {Behavioral:sim_1:Functional:register_tb} -tclbatch {register_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source register_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'register_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1257.035 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'register_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+"xvlog -m64 --relax -prj register_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module changeto8421
+INFO: [VRFC 10-311] analyzing module pattern
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module mul_sel
+INFO: [VRFC 10-311] analyzing module decoder3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_1
+INFO: [VRFC 10-311] analyzing module Reg_16
+INFO: [VRFC 10-311] analyzing module Reg_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/Extender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extender_n
+WARNING: [VRFC 10-756] identifier b is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:2]
+WARNING: [VRFC 10-756] identifier a is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:3]
+INFO: [VRFC 10-311] analyzing module Extender_y
+WARNING: [VRFC 10-756] identifier b is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:10]
+WARNING: [VRFC 10-756] identifier a is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:11]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/RFdatain.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFdatain
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/inst_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-311] analyzing module op_we
+INFO: [VRFC 10-311] analyzing module ctrl_sgn
+INFO: [VRFC 10-311] analyzing module ext_sgn
+INFO: [VRFC 10-311] analyzing module branch
+INFO: [VRFC 10-311] analyzing module equal_6
+INFO: [VRFC 10-311] analyzing module equal_12
+INFO: [VRFC 10-311] analyzing module equal_13
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/show_choice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show_choice
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-311] analyzing module plus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/cpu_tb_需补CPU模块参数.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto af8487a79c614b3ab9500e33fd64b3a7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot register_tb_behav xil_defaultlib.register_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port SEG [D:/CPU/CPU.sim/cpu_tb_需补CPU模块参数.v:6]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 6 for port b [D:/CPU/CPU.srcs/sources_1/new/control.v:13]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port in [D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v:45]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/PC.v" Line 1. Module PC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/extend.v" Line 1. Module extend doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=5,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 1. Module control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 77. Module equal_6 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 21. Module op_we doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 34. Module ctrl_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 54. Module ext_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 64. Module branch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/RFdatain.v" Line 1. Module RFdatain doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 1. Module Reg_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" Line 1. Module inst_count doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/registers.v" Line 1. Module registers doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 33. Module Reg_32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=8,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/PC.v" Line 1. Module PC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=5) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/extend.v" Line 1. Module extend doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=5,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 1. Module control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 77. Module equal_6 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 21. Module op_we doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 34. Module ctrl_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 54. Module ext_sgn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/control.v" Line 64. Module branch doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/RFdatain.v" Line 1. Module RFdatain doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 1. Module Reg_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 9. Module Extender_y(a=16,b=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" Line 1. Module inst_count doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 17. Module Reg_16 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/registers.v" Line 1. Module registers doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/mux.v" Line 1. Module mux2(width=32) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Register.v" Line 33. Module Reg_32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/Extender.v" Line 1. Module Extender_n(a=8,b=32) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.plus
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mux2(width=5)
+Compiling module xil_defaultlib.inst_decoder
+Compiling module xil_defaultlib.mux2(width=32)
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.Extender_n(a=16,b=32)
+Compiling module xil_defaultlib.Extender_y(a=16,b=32)
+Compiling module xil_defaultlib.Extender_n(a=5,b=32)
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.mux2(width=6)
+Compiling module xil_defaultlib.equal_6
+Compiling module xil_defaultlib.op_we
+Compiling module xil_defaultlib.ctrl_sgn
+Compiling module xil_defaultlib.ext_sgn
+Compiling module xil_defaultlib.branch
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.RFdatain
+Compiling module xil_defaultlib.Reg_1
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.changeto8421
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.mul_sel
+Compiling module xil_defaultlib.pattern
+Compiling module xil_defaultlib.decoder3_8
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.show_choice
+Compiling module xil_defaultlib.Reg_16
+Compiling module xil_defaultlib.inst_count
+Compiling module xil_defaultlib.registers
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.Reg_32
+Compiling module xil_defaultlib.Extender_n(a=8,b=32)
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.register_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot register_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/CPU/CPU.sim/sim_1/behav/xsim.dir/register_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/CPU/CPU.sim/sim_1/behav/xsim.dir/register_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Feb 28 11:39:01 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 28 11:39:01 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1257.035 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "register_tb_behav -key {Behavioral:sim_1:Functional:register_tb} -tclbatch {register_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source register_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'register_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1257.035 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'register_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+"xvlog -m64 --relax -prj register_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module changeto8421
+INFO: [VRFC 10-311] analyzing module pattern
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module mul_sel
+INFO: [VRFC 10-311] analyzing module decoder3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_1
+INFO: [VRFC 10-311] analyzing module Reg_16
+INFO: [VRFC 10-311] analyzing module Reg_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/Extender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extender_n
+WARNING: [VRFC 10-756] identifier b is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:4]
+WARNING: [VRFC 10-756] identifier a is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:5]
+INFO: [VRFC 10-311] analyzing module Extender_y
+WARNING: [VRFC 10-756] identifier b is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:12]
+WARNING: [VRFC 10-756] identifier a is used before its declaration [D:/CPU/CPU.srcs/sources_1/new/Extender.v:13]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/RFdatain.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFdatain
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/inst_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-311] analyzing module op_we
+INFO: [VRFC 10-311] analyzing module ctrl_sgn
+INFO: [VRFC 10-311] analyzing module ext_sgn
+INFO: [VRFC 10-311] analyzing module branch
+INFO: [VRFC 10-311] analyzing module equal_6
+INFO: [VRFC 10-311] analyzing module equal_12
+INFO: [VRFC 10-311] analyzing module equal_13
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/show_choice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show_choice
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-311] analyzing module plus
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/cpu_tb_需补CPU模块参数.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto af8487a79c614b3ab9500e33fd64b3a7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot register_tb_behav xil_defaultlib.register_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port SEG [D:/CPU/CPU.sim/cpu_tb_需补CPU模块参数.v:6]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 6 for port b [D:/CPU/CPU.srcs/sources_1/new/control.v:15]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port in [D:/CPU/CPU.srcs/sources_1/new/cpu0228_09h06.v:45]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" Line 1. Module inst_count doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/CPU/CPU.srcs/sources_1/new/inst_count.v" Line 1. Module inst_count doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.plus
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mux2(width=5)
+Compiling module xil_defaultlib.inst_decoder
+Compiling module xil_defaultlib.mux2(width=32)
+Compiling module xil_defaultlib.NPC
+Compiling module xil_defaultlib.Extender_n(a=16,b=32)
+Compiling module xil_defaultlib.Extender_y(a=16,b=32)
+Compiling module xil_defaultlib.Extender_n(a=5,b=32)
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.mux2(width=6)
+Compiling module xil_defaultlib.equal_6
+Compiling module xil_defaultlib.op_we
+Compiling module xil_defaultlib.ctrl_sgn
+Compiling module xil_defaultlib.ext_sgn
+Compiling module xil_defaultlib.branch
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.RFdatain
+Compiling module xil_defaultlib.Reg_1
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.divider(N=50000)
+Compiling module xil_defaultlib.changeto8421
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.mul_sel
+Compiling module xil_defaultlib.pattern
+Compiling module xil_defaultlib.decoder3_8
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.show_choice
+Compiling module xil_defaultlib.Reg_16
+Compiling module xil_defaultlib.inst_count
+Compiling module xil_defaultlib.registers
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.Reg_32
+Compiling module xil_defaultlib.Extender_n(a=8,b=32)
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.register_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot register_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/CPU/CPU.sim/sim_1/behav/xsim.dir/register_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/CPU/CPU.sim/sim_1/behav/xsim.dir/register_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Feb 28 11:41:06 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 28 11:41:06 2018...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CPU/CPU.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "register_tb_behav -key {Behavioral:sim_1:Functional:register_tb} -tclbatch {register_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source register_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'register_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1257.035 ; gain = 0.000
+launch_simulation -mode post-synthesis -type functional
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 810 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/CPU/CPU.srcs/constrs_1/new/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/CPU/CPU.srcs/constrs_1/new/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [USF-XSim-29] Writing simulation netlist file for design 'synth_1'...
+INFO: [USF-XSim-90] write_verilog -mode funcsim -nolib -force -file "D:/CPU/CPU.sim/sim_1/synth/func/register_tb_func_synth.v"
+INFO: [USF-XSim-34] Netlist generated:D:/CPU/CPU.sim/sim_1/synth/func/register_tb_func_synth.v
+INFO: [USF-XSim-37] Inspecting design source files for 'register_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/CPU/CPU.sim/sim_1/synth/func'
+"xvlog -m64 --relax -prj register_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/sim_1/synth/func/register_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-311] analyzing module Reg_1
+INFO: [VRFC 10-311] analyzing module Reg_16
+INFO: [VRFC 10-311] analyzing module Reg_16_0
+INFO: [VRFC 10-311] analyzing module Reg_16_1
+INFO: [VRFC 10-311] analyzing module Reg_32
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module changeto8421
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module inst_count
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-311] analyzing module show_choice
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/cpu_tb_需补CPU模块参数.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/sim_1/synth/func/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [D:/CPU/CPU.sim/sim_1/synth/func/glbl.v:6]
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CPU/CPU.sim/sim_1/synth/func'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto af8487a79c614b3ab9500e33fd64b3a7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot register_tb_func_synth xil_defaultlib.register_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module xil_defaultlib.alu
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.sffsrce_fdre
+Compiling module unisims_ver.FDRE
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux4
+Compiling module unisims_ver.x_lut3_mux4_reduced_0
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=0,DOB...
+Compiling module unisims_ver.RAMB18E1(RAM_MODE="SDP",READ_WID...
+Compiling module xil_defaultlib.registers
+Compiling module unisims_ver.ffsrce_fdce
+Compiling module unisims_ver.FDCE
+Compiling module xil_defaultlib.Reg_32
+Compiling module unisims_ver.MUXF7
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.NPC
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.Reg_16
+Compiling module xil_defaultlib.Reg_16_0
+Compiling module xil_defaultlib.Reg_16_1
+Compiling module xil_defaultlib.inst_count
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.Reg_1
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.changeto8421
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.show_choice
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.register_tb
+Compiling module xil_defaultlib.glbl
+Waiting for 7 sub-compilation(s) to finish...
+Assembler messages:
+Error: can't open xsim.dir/register_tb_func_synth/obj/xsim_2.win64.as for reading: No such file or directory
+Assembler messages:
+Error: can't open xsim.dir/register_tb_func_synth/obj/xsim_3.win64.as for reading: No such file or directory
+ERROR: [XSIM 43-3410] Failed to compile one of the generated C files.
+Please recompile with "-mt off -v 1" switch to identify which design unit failed.
+run_program: Time (s): cpu = 00:00:10 ; elapsed = 00:00:44 . Memory (MB): peak = 1835.570 ; gain = 365.418
+INFO: [USF-XSim-99] Step results log file:'D:/CPU/CPU.sim/sim_1/synth/func/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/CPU/CPU.sim/sim_1/synth/func/elaborate.log' file for more information.
+launch_simulation: Time (s): cpu = 00:00:21 ; elapsed = 00:00:52 . Memory (MB): peak = 1835.570 ; gain = 490.703
+close_design
+launch_simulation -mode post-synthesis -type timing
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 810 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/CPU/CPU.srcs/constrs_1/new/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [D:/CPU/CPU.srcs/constrs_1/new/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [USF-XSim-29] Writing simulation netlist file for design 'synth_1'...
+INFO: [USF-XSim-90] write_verilog -mode timesim -nolib -sdf_anno true -force -file "D:/CPU/CPU.sim/sim_1/synth/timing/register_tb_time_synth.v"
+write_verilog: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 1839.160 ; gain = 0.000
+INFO: [USF-XSim-30] Writing SDF file...
+INFO: [USF-XSim-91] write_sdf -mode timesim -process_corner slow -force -file "D:/CPU/CPU.sim/sim_1/synth/timing/register_tb_time_synth.sdf"
+write_sdf: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1915.910 ; gain = 76.750
+INFO: [USF-XSim-34] Netlist generated:D:/CPU/CPU.sim/sim_1/synth/timing/register_tb_time_synth.v
+INFO: [USF-XSim-35] SDF generated:D:/CPU/CPU.sim/sim_1/synth/timing/register_tb_time_synth.sdf
+INFO: [USF-XSim-37] Inspecting design source files for 'register_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'D:/CPU/CPU.sim/sim_1/synth/timing'
+ERROR: [Labtools 27-3175] Target jsn-Nexys4DDR-210292746182A is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+"xvlog -m64 --relax -prj register_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/sim_1/synth/timing/register_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-311] analyzing module Reg_1
+INFO: [VRFC 10-311] analyzing module Reg_16
+INFO: [VRFC 10-311] analyzing module Reg_16_0
+INFO: [VRFC 10-311] analyzing module Reg_16_1
+INFO: [VRFC 10-311] analyzing module Reg_32
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module changeto8421
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module inst_count
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-311] analyzing module show_choice
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/cpu_tb_需补CPU模块参数.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU/CPU.sim/sim_1/synth/timing/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [D:/CPU/CPU.sim/sim_1/synth/timing/glbl.v:6]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'D:/CPU/CPU.sim/sim_1/synth/timing/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation: Time (s): cpu = 00:00:38 ; elapsed = 00:00:29 . Memory (MB): peak = 1915.910 ; gain = 76.750
